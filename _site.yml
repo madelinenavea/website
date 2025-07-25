@@ -1,0 +1,32 @@
+name: "my-website"
+navbar:
+  title: "Madeline Navea"
+  type: inverse
+  left:
+    - text: "About"
+      icon: fa-home
+      href: index.html
+    - text: "Analytic Projects"
+      icon: fa-diagram-project
+      href: projects.html
+      background: lightgrey
+    - text: "Resources"
+      icon: fa-link
+      href: resources.html
+    - text: "Contact"
+      icon: fa-address-card
+      href: contact.html
+    - text: "CV"
+      icon: fa-file-user
+      href: "https://docs.google.com/document/d/1m-iQPYsa8D0OISMWgcpMHS5Ecljx17umGvhgHiUWals/edit?usp=sharing"
+output:
+  html_document:
+    theme: sandstone
+    css: "styles.css"
+    
+# (preferred) themes: “flatly”, “sandstone”, "cosmo", “readable”, “united”
+# tier 1 (lol): “default”, “bootstrap”, “darkly”, “journal”, “paper”, “yeti”
+# yikes: “cerulean”, “lumen”, “readable”, “simplex”, “spacelab”, “united”
+#    - text: "Publications"
+#      icon: fa-newspaper
+#      href: publications.html

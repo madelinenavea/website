@@ -1,0 +1,12 @@
+name: my-website
+title:
+username: madelinenavea
+account: madelinenavea
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15101231
+bundleId: 10645789
+url: https://madelinenavea.shinyapps.io/my-website/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
