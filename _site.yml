@@ -13,9 +13,9 @@ navbar:
     - text: "Resources"
       icon: fa-link
       href: resources.html
-    - text: "Contact"
-      icon: fa-address-card
-      href: contact.html
+#    - text: "Contact"
+#      icon: fa-address-card
+#      href: contact.html
     - text: "CV"
       icon: fa-file-user
       href: "https://docs.google.com/document/d/1m-iQPYsa8D0OISMWgcpMHS5Ecljx17umGvhgHiUWals/edit?usp=sharing"
