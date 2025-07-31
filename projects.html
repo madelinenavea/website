@@ -309,6 +309,7 @@ $(document).ready(function () {
     gap: 10px;
     margin-top: 10px;
   }
+
   .outer {
     position: relative;
     display: inline-block;
@@ -319,6 +320,7 @@ $(document).ready(function () {
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   .outer:hover {
     opacity: 0.5;
     background-blend-mode: darken;
@@ -334,74 +336,143 @@ $(document).ready(function () {
     transition: opacity 0.3s;
     z-index: 2;
   }
+
   .outer:hover .link-icon {
     opacity: 1;
   }
+
   .project-image {
     width: 100%;
     height: auto;
   }
+  .filter-buttons {
+  margin-bottom: 40px;
+  text-align: center;
+  }
+  .filter-buttons button {
+    background: #2c6b3f;
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 0.8rem 1.6rem;
+    margin: 0 0.75rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    font-family: tahoma, serif;
+  }
+  .filter-buttons button:hover {
+    background: #1d4d2f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  }
+  .filter-buttons button:active {
+    background: #153e27;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  .filter-buttons button.active {
+    background: #153e27;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  }
 </style>
 
-<p style="font-family: tahoma, serif; font-size: 15pt; color: #2c3e50; padding-bottom: 20px;"> 
-Below, you can find my previous and current research projects! Click on any project to view more details, open-source materials, and code on GitHub.
+
+
+<p style="font-family: tahoma, serif; font-size: 15pt; color: #2c3e50;padding-bottom: 20px;"> 
+Below, you can find my previous and current research projects! Click on any project to view more details and open-source materials and code on GitHub.
 </p>
 
-<div class="projects-container">       
-<div class="outer">
-  <a href="https://github.com/madelinenavea/Affect-Clusters-and-Self-injury">
-       <i class="fas fa-link link-icon"></i>
-           <img src="project_LPA MLM.png" class="project-image">
-       <p style="font-family: tahoma, serif; font-size:11.5pt; color: #1d4d2f; font-weight: bold;"> Associations Between Latent Profiles of Affect and Self-injury
+
+<div class="filter-buttons">
+  <button class="filter-btn" data-filter="all">Show All Projects</button>
+  <button class="filter-btn" data-filter="research">Research Projects</button>
+  <button class="filter-btn" data-filter="cs">Data/Computer Science Projects</button>
+</div>
+
+
+<div class="projects-container">
+<div class="outer research">
+  <a href="https://github.com/madelinenavea/Affect-Clusters-and-Self-injury" target="_blank">
+    <i class="fas fa-link link-icon"></i>
+    <img src="project_LPA MLM.png" class="project-image">
+    <p style="font-family: tahoma, serif; font-size:11.5pt; color: #1d4d2f; font-weight: bold;">
+      Associations Between Latent Profiles of Affect and Self-injury
     </p> 
   </a>
 </div>
 
-<div class="outer">
+<div class="outer research">
   <a href="https://github.com/madelinenavea/Changes-in-Affect-Pre-and-Post-Self-Injury">
-         <i class="fas fa-link link-icon"></i>
-           <img src="project_Traj Affect.png" class="project-image">
+  <i class="fas fa-link link-icon"></i>
+    <img src="project_Traj Affect.png" class="project-image">
     <p style="font-family: tahoma, serif; font-size:11.5pt; color: #1d4d2f; font-weight: bold;"> IN PROGRESS: Trajectories of Change in Affect Pre- and Post- Self-injury
     </p> 
   </a>
 </div>
 
-<div class="outer">
+<div class="outer research">
   <a href="https://github.com/madelinenavea/Predicting-Exercise-Behavior-in-BSEDs">
-         <i class="fas fa-link link-icon"></i>
-           <img src="project_MLR BDI.png" class="project-image">
+  <i class="fas fa-link link-icon"></i>
+    <img src="project_MLR BDI.png" class="project-image">
     <p style="font-family: tahoma, serif; font-size:11.5pt; color: #1d4d2f; font-weight: bold;"> Predicting Maladaptive Exercise From Eating Disorder Behaviors
     </p> 
   </a>
 </div>
 
-<div class="outer">
+<div class="outer research">
   <a href="https://github.com/madelinenavea/Associations-Between-Urges-and-Self-Injury">
-         <i class="fas fa-link link-icon"></i>
-           <img src="project_MLM SIU.png" class="project-image">
+  <i class="fas fa-link link-icon"></i>
+    <img src="project_MLM SIU.png" class="project-image">
     <p style="font-family: tahoma, serif; font-size:11.5pt; color: #1d4d2f; font-weight: bold;"> Multilevel model of Momentary Self-injurous Urges and Self-injurious Behaviors
     </p> 
   </a>
 </div>
 
-<div class="outer">
+  <div class="outer cs">
   <a href="https://github.com/madelinenavea/Clusters-of-Depression-and-Eating-Disorder-Behaviors">
-         <i class="fas fa-link link-icon"></i>
-           <img src="project_LPA BDI.png" class="project-image">
+  <i class="fas fa-link link-icon"></i>
+    <img src="project_Plot_ED_behaviors.jpg" class="project-image">
     <p style="font-family: tahoma, serif; font-size:11.5pt; color: #1d4d2f; font-weight: bold;"> IN PROGRESS: Phenotypes of Depression in Disorder Eating Behaviors
     </p> 
   </a>
 </div>  
 
-<div class="outer">
+  <div class="outer cs">
   <a href="https://github.com/madelinenavea/Time-Series-Computational-Model-on-Self-injury">
-         <i class="fas fa-link link-icon"></i>
-           <img src="project_DSEM Thesis.png" class="project-image">
-    <p style="font-family: tahoma, serif; font-size:11.5pt; color: #1d4d2f; font-weight: bold;"> IN PROGRESS: Dynamic Structural Equation Model Predicting Self-injurious Behaviors
+  <i class="fas fa-link link-icon"></i>
+    <img src="project_DSEM Thesis.png" class="project-image">
+    <p style="font-family: tahoma, serif; font-size:11.5pt; color: #1d4d2f; font-weight: bold;"> IN PROGRESS: Dynamic Structural Equation Model of Real-Time Affect, Self-injurious Urges, and Self-injurious Behaviors
     </p> 
   </a>
 </div>
 </div>
+
+
+<script>
+  const buttons = document.querySelectorAll('.filter-btn');
+  const cards   = document.querySelectorAll('.projects-container .outer');
+
+  function filterProjects(category) {
+    cards.forEach(card => {
+      card.classList.toggle('hidden',
+        category !== 'all' && !card.classList.contains(category)
+      );
+    });
+    buttons.forEach(btn => {
+      btn.classList.toggle('active',
+        btn.getAttribute('data-filter') === category
+      );
+    });
+  }
+  buttons.forEach(btn =>
+    btn.addEventListener('click', () =>
+      filterProjects(btn.getAttribute('data-filter'))
+    )
+  );
+  document.addEventListener('DOMContentLoaded', () => filterProjects('all'));
+</script>
 
 
 
