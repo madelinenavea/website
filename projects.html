@@ -298,30 +298,48 @@ $(document).ready(function () {
 
 
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <style>
   .projects-container {
     display: flex;
     flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
   }
   .outer {
+    position: relative;
     display: inline-block;
     width: 550px;
     height: 550px;
     transition: opacity 0.3s;
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .outer:hover {
     opacity: 0.5;
+    background-blend-mode: darken;
   }
-  .inner {
+  .link-icon {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 100px;
     opacity: 0;
-    width: 100px;
-    height: 100px;
+    transition: opacity 0.3s;
+    z-index: 2;
   }
-  inner:hover {
+  .outer:hover .link-icon {
     opacity: 1;
+  }
+  .project-image {
+    width: 100%;
+    height: auto;
   }
 </style>
 
@@ -332,15 +350,17 @@ Below, you can find my previous and current research projects! Click on any proj
 <div class="projects-container">       
 <div class="outer">
   <a href="https://github.com/madelinenavea/Affect-Clusters-and-Self-injury">
-    <img src="project_LPA MLM.png" class="project-image">
-    <p style="font-family: tahoma, serif; font-size:11.5pt; color: #1d4d2f; font-weight: bold;"> Associations Between Latent Profiles of Affect and Self-injury
+       <i class="fas fa-link link-icon"></i>
+           <img src="project_LPA MLM.png" class="project-image">
+       <p style="font-family: tahoma, serif; font-size:11.5pt; color: #1d4d2f; font-weight: bold;"> Associations Between Latent Profiles of Affect and Self-injury
     </p> 
   </a>
 </div>
 
 <div class="outer">
   <a href="https://github.com/madelinenavea/Changes-in-Affect-Pre-and-Post-Self-Injury">
-    <img src="project_Traj Affect.png" class="project-image">
+         <i class="fas fa-link link-icon"></i>
+           <img src="project_Traj Affect.png" class="project-image">
     <p style="font-family: tahoma, serif; font-size:11.5pt; color: #1d4d2f; font-weight: bold;"> IN PROGRESS: Trajectories of Change in Affect Pre- and Post- Self-injury
     </p> 
   </a>
@@ -348,7 +368,8 @@ Below, you can find my previous and current research projects! Click on any proj
 
 <div class="outer">
   <a href="https://github.com/madelinenavea/Predicting-Exercise-Behavior-in-BSEDs">
-    <img src="project_MLR BDI.png" class="project-image">
+         <i class="fas fa-link link-icon"></i>
+           <img src="project_MLR BDI.png" class="project-image">
     <p style="font-family: tahoma, serif; font-size:11.5pt; color: #1d4d2f; font-weight: bold;"> Predicting Maladaptive Exercise From Eating Disorder Behaviors
     </p> 
   </a>
@@ -356,7 +377,8 @@ Below, you can find my previous and current research projects! Click on any proj
 
 <div class="outer">
   <a href="https://github.com/madelinenavea/Associations-Between-Urges-and-Self-Injury">
-    <img src="project_MLM SIU.png" class="project-image">
+         <i class="fas fa-link link-icon"></i>
+           <img src="project_MLM SIU.png" class="project-image">
     <p style="font-family: tahoma, serif; font-size:11.5pt; color: #1d4d2f; font-weight: bold;"> Multilevel model of Momentary Self-injurous Urges and Self-injurious Behaviors
     </p> 
   </a>
@@ -364,7 +386,8 @@ Below, you can find my previous and current research projects! Click on any proj
 
 <div class="outer">
   <a href="https://github.com/madelinenavea/Clusters-of-Depression-and-Eating-Disorder-Behaviors">
-    <img src="project_LPA BDI.png" class="project-image">
+         <i class="fas fa-link link-icon"></i>
+           <img src="project_LPA BDI.png" class="project-image">
     <p style="font-family: tahoma, serif; font-size:11.5pt; color: #1d4d2f; font-weight: bold;"> IN PROGRESS: Phenotypes of Depression in Disorder Eating Behaviors
     </p> 
   </a>
@@ -372,7 +395,8 @@ Below, you can find my previous and current research projects! Click on any proj
 
 <div class="outer">
   <a href="https://github.com/madelinenavea/Time-Series-Computational-Model-on-Self-injury">
-    <img src="project_DSEM Thesis.png" class="project-image">
+         <i class="fas fa-link link-icon"></i>
+           <img src="project_DSEM Thesis.png" class="project-image">
     <p style="font-family: tahoma, serif; font-size:11.5pt; color: #1d4d2f; font-weight: bold;"> IN PROGRESS: Dynamic Structural Equation Model Predicting Self-injurious Behaviors
     </p> 
   </a>
